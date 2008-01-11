@@ -35,10 +35,6 @@ cp %name $RPM_BUILD_ROOT/%_bindir/
 cp *.xml $RPM_BUILD_ROOT/%_datadir/%name/
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="QAMix" longtitle="ALSA Mixer" section="Multimedia/Sound" xdg="true"
-EOF
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -77,7 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README THANKS *.ams
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
