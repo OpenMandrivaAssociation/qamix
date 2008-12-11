@@ -12,7 +12,7 @@ URL:		http://www.suse.de/~mana/kalsatools.html
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	qt3-devel libalsa-devel ImageMagick
+BuildRequires:	qt3-devel libalsa-devel imagemagick
 
 %description
 QAMix is a configurable mixer for ALSA. The GUI description is defined in an
