@@ -1,6 +1,6 @@
 %define name	qamix
 %define version	0.0.7e
-%define release %mkrel 6
+%define release %mkrel 7
 
 Name: 	 	%{name}
 Summary: 	Easily configurable ALSA mixer
