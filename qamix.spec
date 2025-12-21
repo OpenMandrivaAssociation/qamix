@@ -12,6 +12,7 @@ URL:		https://www.suse.de/~mana/kalsatools.html
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	make
 BuildRequires:	qt3-devel libalsa-devel imagemagick
 
 %description
